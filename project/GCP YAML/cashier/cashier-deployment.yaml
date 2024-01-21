@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cashierapp-deployment
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      name: cashierapp
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      # unlike pod.yaml, the name is not included in the meta data as a unique name is
+      # generated from the deployment name
+      labels:
+        name: cashierapp
+    spec:
+      containers:
+        - name: cashierapp
+          image: mujunyu520/cashierapp:v1.8s
+          env:
+            - name: MYSQL_HOST
+              value: "10.4.96.3" #need update everytime u rerun your mysql in GKE
+            - name: REDIS_HOST
+              value: "10.92.1.23" #need update everytime u rerun your redis in GKE
+          ports:
+            - containerPort: 8080

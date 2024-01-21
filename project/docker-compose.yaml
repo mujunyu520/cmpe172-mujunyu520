@@ -1,0 +1,85 @@
+
+version: "3"
+
+services:
+  mysql:
+    image: mysql:8.0
+    platform: linux/amd64
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - network
+    ports:
+      - 3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "cmpe172"
+    restart: always
+  spring-cashier:
+    image: spring-cashier
+    platform: linux/amd64
+    depends_on:
+      - mysql
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - network
+    ports:
+      - 9090
+    environment:
+      MYSQL_HOST: "mysql"
+    restart: always
+  lb:
+    image: eeacms/haproxy
+    platform: linux/amd64
+    depends_on:
+      - spring-cashier
+    ports:
+      - "80:5000"
+      - "1936:1936"
+    environment:
+      BACKENDS: "spring-cashier"
+      BACKENDS_PORT: "9090"
+      DNS_ENABLED: "true"
+      COOKIES_ENABLED: "true"
+      LOG_LEVEL: "info"
+    networks:
+      - network
+  starbucks-api:
+    image: spring-starbucks-api
+    depends_on:
+    - mysql    
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - network   
+    ports:
+      - 8080    
+    environment:
+      MYSQL_HOST: "mysql"
+    restart: always
+  Kong:
+    image: kong
+    networks:
+      - network
+    environment:
+      KONG_DATABASE: off
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001, 0.0.0.0:8444 ssl
+    ports:
+      - 80:8000
+      - 443:8443
+      - 8001:8001
+      - 8444:8444
+
+
+volumes:
+  schemas:
+    external: false
+
+networks:
+  network:
+    driver: bridge
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34708ac6-8ad2-4870-8cb3-c83b47a1cf37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/spring-gumball-v2.0/src/main/resources/templates/gumball.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-gumball-v2.0/src/main/resources/templates/gumball.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/java/com/example/springsecurity/MvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/java/com/example/springsecurity/SpringSecurityApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/java/com/example/springsecurity/WebSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/resources/templates/hello.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/main/resources/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-security/src/test/java/com/example/springsecurity/SpringSecurityApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GCl31dyikrJ73RTR3QeX8tOf4x" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/cmpe172-mujunyu520/labs/lab4/spring-gumball-v2.0/spring-security",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.springgumball" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\cmpe172-mujunyu520\labs\lab4\spring-gumball-v2.0" />
+      <recent name="E:\cmpe172-mujunyu520\labs\lab4\spring-gumball-v2.0\src\main" />
+      <recent name="E:\cmpe172-mujunyu520\labs\lab4\spring-gumball-v2.0\src\main\java\com\example\springgumball" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="spring-gumball-v2.0/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="spring-gumball-v2.0/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-gumball-v2.0/docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="spring-gumball-v2.0/docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.spring-gumball-v2.0/docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="Docker.spring-gumball-v2.0/Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34708ac6-8ad2-4870-8cb3-c83b47a1cf37" name="Changes" comment="" />
+      <created>1665900244044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665900244044</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

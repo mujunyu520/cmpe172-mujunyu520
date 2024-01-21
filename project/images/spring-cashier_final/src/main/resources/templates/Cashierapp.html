@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Starbucks Reserved</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 4% 0;
+            color: #4CAF50;
+            text-shadow: 2px 2px #f2f2f2;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        pre {
+            font-family: monospace;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .server-info {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body onload="selectedStore()">
+
+<h1>Welcome to Starbucks Reserved (final project 2023)</h1>
+
+<form name="form" th:object="${command}" method="post" action="">
+
+    <input type="hidden" name="register" id="register" th:field="*{register}" />
+
+    <p>
+        <textarea readonly id="message" name="message" cols="50" rows="13" th:text="${message}"></textarea>
+    </p>
+
+    <div>
+        <label for="stores">Select Store:</label>
+        <select name="stores" id="stores">
+            <option value="5012349">Dub-C</option>
+            <option value="1287612">P-Town</option>
+            <option value="6498234">The City</option>
+            <option value="7812386">Eso</option>
+            <option value="8723098">The Dro</option>
+            <option value="9621043">Mateo</option>
+            <option value="1393478">Deadwood</option>
+        </select>
+    </div>
+
+    <br/>
+
+    <div>
+        <label for="drink">Drink:</label>
+        <select name="drink" id="drink">
+            <option value="Caffe Latte">Caffe Latte</option>
+            <option value="Caffe Americano">Caffe Americano</option>
+            <option value="Caffe Mocha">Caffe Mocha</option>
+            <option value="Espresso">Espresso</option>
+            <option value="Cappuccino">Cappuccino</option>
+        </select>
+    </div>
+
+    <br/>
+
+    <div>
+        <label for="milk">Milk:</label>
+        <select name="milk" id="milk">
+            <option value="Whole Milk">Whole Milk</option>
+            <option value="2% Milk">2% Milk</option>
+            <option value="Nonfat Milk">Nonfat Milk</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Soy Milk">Soy Milk</option>
+        </select>
+    </div>
+
+    <br/>
+
+    <div>
+        <label for="size">Size:</label>
+        <select name="size" id="size">
+            <option value="Tall">Tall</option>
+            <option value="Grande">Grande</option>
+            <option value="Venti">Venti</option>
+        </select>
+    </div>
+
+    <br/>
+
+    <p align="center"><img src="/images/starbucks.jpg" alt="Starbucks Logo"></p>
+
+    <br/>
+
+    <p align="center">
+        <input type="submit" name="action" id="btnGetOrder" value="Get Order">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="action" id="btnPlaceOrder" value="Place Order">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" name="action" id="btnClearOrder" value="Clear Order">
+    </p>
+
+    <br/>
+
+    <form name="form" th:object="${command}" method="post" action="/logout">
+        <div align="center">
+            <input type="submit" name="action" id="btnLogout" value="Logout">
+        </div>
+    </form>
+
+</form>
+
+<br/>
+<br/>
+
+<div class="server-info" align="center">
+    <pre>Server Host/IP:  <span th:text="${server}"></span></pre>
+</div>
+
+<br/>
+<br/>
+
+</body>
+</html>
