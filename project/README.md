@@ -106,9 +106,6 @@ After that, we added the Kong key auth plugin. The commands are:
 
 
 
-Then, we push the docker image into our account.
-
-<img width="888" alt="image" src="https://github.com/nguyensjsu/cmpe172-mujunyu520/assets/60667298/fc95a9bd-2a96-45d8-be2b-9ec1b642954c">
 
 We deploy the cashier's app into the cluster. The commands are:
 
