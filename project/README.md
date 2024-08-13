@@ -35,11 +35,12 @@ This project shows the collaboration of the deployed instance and the local mach
 
 the project structure of could deployment is below picture:
 
+![image](https://github.com/user-attachments/assets/0e98fb48-fbc4-49aa-a089-12636d3f7161)
+
+
 
 however, I decide not to implement the rebbit part due to some technical issues.
 
-
-this is my image <img width="496" alt="image" src="https://github.com/nguyensjsu/cmpe172-mujunyu520/assets/60667298/960861b9-5397-401e-a7f2-b23117333087">
 
 Before instruction of the deployed instance for running the Starbucks project, we need docker images: Starbucks REST API. So, we build the docker image and push it into our own docker account. For making the docker image, we need to set up the environment: Maven 3.8.5 Java JDK 11
 
