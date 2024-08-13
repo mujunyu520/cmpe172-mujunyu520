@@ -1,4 +1,4 @@
-![kong](https://github.com/user-attachments/assets/81942bf6-8bdd-4b7d-9700-4576d97f9186)# CMPE 172 Project Journal
+# CMPE 172 Project Journal
 
 
 ## Starbucks Project
@@ -6,7 +6,7 @@
 
 ## Introduction
 
-Starbucks Project shows the ordering and purchasing process in the local store  So, the next step is developing the online store app and back-office app. Those apps will be used gradle, NodeJS, and spring boot, and we have used Redis, kong API, spring REST API, MySQL
+Starbucks Project shows the ordering and purchasing process in the local store  So, the next step is developing the online store and back-office apps. Those apps will be used gradle, NodeJS, and Spring Boot, and we have used Redis, kong API, spring REST API, MySQL
 
 
 
@@ -14,7 +14,7 @@ REQUIREMENT
 
 1. Cashier's App:
 
-Following the template of the Starbucks Cashier APP which is made by NodeJS supports the admin logins for Starbucks employees Supports the order processing in the store
+Following the template of the Starbucks Cashier APP which NodeJS supports the admin logins for Starbucks employees and Supports the order processing in the store
 
 2. Cloud Deployment on GCP
 
@@ -24,7 +24,7 @@ External Load Balancer as Ingress for Cashier's App Internal Load Balancer for S
 
 GCP MySQL
 
-4. Connect kong API Starbucks API, Mobile App, and Store Front
+4. Connect Kong API Starbucks API, Mobile App, and Store Front
 
 Deployed with Kong API Gateway Implement with API Key Authentication
 
